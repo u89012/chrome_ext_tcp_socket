@@ -1,0 +1,16 @@
+{
+  "name": "chrome_ext_tcp_socket",
+  "version": "0.1",
+  "manifest_version": 2,
+  "minimum_chrome_version": "23",
+  "app": {
+    "background": {
+      "scripts": ["inject.js"]
+    }
+  },
+  "sockets": {
+    "tcp": {
+      "connect": "127.0.0.1:3000"
+    }
+  }
+}
